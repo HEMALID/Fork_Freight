@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fork_Freight_App</string>
+    <string name="welcome_to">Welcome to Fork Freight</string>
+    <string name="lorem_ipsum">Fork Freight\'s mission is to provide the platform where not only publisher of the truck (carrier) meets the broker that post the load but also provide all entities with access to the load board while attracting shippers post their load directly without the intermediary. FF aims to provide platform where shipper can have access to many carriers and be able to choose the one, they trust the most to haul their loads</string>
+    <string name="login">Login</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="login_with_">Login with your Social account</string>
+    <string name="new_user_si">New User? Sign Up</string>
+
+
+
+
+</resources>
+
+

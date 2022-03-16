@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/find_truck"
+        android:icon="@drawable/truck"
+        android:title="Find Truck"/>
+
+    <item android:id="@+id/brokers"
+        android:icon="@drawable/broker"
+        android:title="Brokers"/>
+
+    <item android:id="@+id/my_shipment"
+        android:icon="@drawable/side_up"
+        android:title="My Shipment"/>
+
+    <item android:id="@+id/track_my_load"
+        android:icon="@drawable/location"
+        android:title="Track my load"/>
+
+    <item android:id="@+id/setting"
+        android:icon="@drawable/gear"
+        android:title="Setting"/>
+
+
+</menu>
