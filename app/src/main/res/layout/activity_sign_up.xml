@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btnCancle1"
+        android:backgroundTint="@color/white"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@drawable/close"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/pbar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="10" />
+
+        <ProgressBar
+            android:id="@+id/pbar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+        <ProgressBar
+            android:id="@+id/pbar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+        <ProgressBar
+            android:id="@+id/pbar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/add_your_em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/add_your_em"
+            android:textAppearance="@style/add_your_em"
+            android:lineSpacingExtra="-14sp"
+            android:gravity="top"
+            />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:gravity="top"
+            android:hint="Email ID"
+            android:textAppearance="@style/email_id_" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="309dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/next1"
+            android:background="@color/white"
+            android:textColor="#4F69AD"
+            android:textAppearance="@style/next1" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

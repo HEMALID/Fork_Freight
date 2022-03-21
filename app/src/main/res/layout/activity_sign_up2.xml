@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity2"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btnCancle2"
+        android:backgroundTint="@color/white"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@drawable/close"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/pbar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="10" />
+
+        <ProgressBar
+            android:id="@+id/pbar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+        <ProgressBar
+            android:id="@+id/pbar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+        <ProgressBar
+            android:id="@+id/pbar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="95dp"
+            android:layout_height="12dp"
+            android:max="100"
+            android:layout_marginLeft="5dp"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/create_a_pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/create_a_pa"
+            android:textAppearance="@style/create_a_pa" />
+
+        <TextView
+            android:id="@+id/your_passwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            style="@style/your_passwo" />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="165dp"
+            android:hint="Password"
+            android:textAppearance="@style/password"
+            android:lineSpacingExtra="-9sp"
+            android:gravity="top" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="309dp"
+            android:layout_marginTop="600dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/next2"
+            android:background="@color/white"
+            android:textColor="#4F69AD"
+            android:textAppearance="@style/next2" />
+
+    </FrameLayout>
+
+</LinearLayout>

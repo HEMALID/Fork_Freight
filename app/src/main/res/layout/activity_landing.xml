@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/long_truck"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_width="440dp"
+        android:layout_height="320dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
@@ -25,14 +25,14 @@
         android:layout_height="30dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="284dp"
         android:fontFamily="@font/roboto_medium"
         android:gravity="top"
         android:lineSpacingExtra="0sp"
         android:text="@string/welcome_to"
         android:textAppearance="@style/welcome_to_"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,24 +55,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_to" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/login"
-        android:text="Login"
+        android:text="@string/loginbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lorem_ipsum" />
 
-    <Button
-        android:id="@+id/btn_signin"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/signin"
-        android:text="Create Account"
+        android:text="@string/create_ac"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />

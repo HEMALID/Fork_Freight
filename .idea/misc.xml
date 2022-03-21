@@ -3,18 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/button1.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/button2.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/facebook.xml" value="0.1025" />
         <entry key="app/src/main/res/drawable/line.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/login.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/long_truck.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/rectangle_c.xml" value="0.138" />
         <entry key="app/src/main/res/layout/activity_find_truck.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_1.xml" value="0.1546875" />
-        <entry key="app/src/main/res/layout/fragment_2.xml" value="0.1546875" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20024721878862795" />
+        <entry key="app/src/main/res/layout/activity_sign_up2.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_sign_up3.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_sign_up4.xml" value="0.18809373020899303" />
+        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.15613382899628253" />
+        <entry key="app/src/main/res/layout/equipment_item.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_1.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_2.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_3.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_4.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_5.xml" value="0.1546875" />
@@ -23,6 +31,7 @@
         <entry key="app/src/main/res/layout/fragment_my_shipment_fg.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_setting_fg.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_track_my_load_fg.xml" value="0.1546875" />
+        <entry key="app/src/main/res/layout/role_item.xml" value="0.22" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.1546875" />
       </map>
     </option>

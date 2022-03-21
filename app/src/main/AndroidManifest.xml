@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fork_Freight_App">
         <activity
-            android:name=".Find_truck_Activity"
+            android:name=".SignUpActivity4"
             android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".SignUpActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Find_truck_Activity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -26,7 +35,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

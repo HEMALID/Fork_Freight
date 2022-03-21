@@ -26,18 +26,89 @@
     </style>
 
     <style name="forgot_pass">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">#B32C32</item>
     </style>
 
     <style name="login_with_">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">#000000</item>
     </style>
 
     <style name="new_user_si">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#7F8495</item>
+    </style>
+
+    <style name="add_your_em">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="email_id_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#7F8495</item>
+    </style>
+
+    <style name="next1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="create_a_pa">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="your_passwo">
+        <item name="android:text">Your password must include a symbol or a number\nand be 8 or more characters long.</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>
+
+    <style name="passwords">
+        <item name="android:radius">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7F8495</item>
+    </style>
+
+    <style name="next2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="role">
+        <item name="android:text">What is Your Role?</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="rolehead">
+        <item name="android:text">Shipper</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="rolebody">
+        <item name="android:text">You are looking for a broker or trusted carrier</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="what_equipm">
+        <item name="android:text">What Equipment type you use the most?</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#4F69AD</item>
+    </style>
+
+    <style name="signUp">
+        <item name="android:text">Sign Up</item>
+        <item name="android:textColor">#FF32519F</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>
