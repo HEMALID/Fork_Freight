@@ -1,22 +1,21 @@
-package com.example.fork_freight_app
+package com.example.fork_freight_app.role
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fork_freight_app.ModelRole.role
-import com.example.fork_freight_app.ModelRole.roleX
 import com.example.fork_freight_app.databinding.RoleItemBinding
+import com.example.fork_freight_app.role.modelrole.Role
 
-class RoleAdapter(val context: Context, var roleList: List<roleX>) :RecyclerView.Adapter<RoleAdapter.ViewHolder>(){
+class RoleAdapter() :RecyclerView.Adapter<RoleAdapter.ViewHolder>(){
 
-    /*fun setDataList(data :  ArrayList<roleX>) {
-        this.roleList = data
-    }*/
+    var role = ArrayList<Role>()
 
+    fun setDataList(data:ArrayList<Role>){
+        this.role = data
+    }
     class ViewHolder(val binding: RoleItemBinding):RecyclerView.ViewHolder(binding.root){
-        fun bind(data: roleX) {
-            binding.recyclerData = data
+        fun bind(data: Role) {
+            binding.role = data
             binding.executePendingBindings()
         }
     }
@@ -28,10 +27,9 @@ class RoleAdapter(val context: Context, var roleList: List<roleX>) :RecyclerView
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(roleList[position])
+        holder.bind(role[position])
     }
 
-    override fun getItemCount(): Int {
-        return roleList.size
-    }
+    override fun getItemCount() = role.size
+
 }

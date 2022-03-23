@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Brokers_fg">
+    tools:context=".fragment.Brokers_fg">
 
     <TextView
         android:layout_width="match_parent"

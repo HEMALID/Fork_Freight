@@ -2,36 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fork_freight_app">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/_group"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/_group"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fork_Freight_App">
         <activity
-            android:name=".SignUpActivity4"
+            android:name=".activity.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity3"
+            android:name=".activity.FindTruckActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity2"
+            android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activity.LandingActivity"
             android:exported="false" />
         <activity
-            android:name=".Find_truck_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LandingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

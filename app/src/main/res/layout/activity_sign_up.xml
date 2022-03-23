@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity">
 
     <ImageButton
         android:id="@+id/btnCancle1"
-        android:backgroundTint="@color/white"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
         android:gravity="center"
-        android:src="@drawable/close"/>
+        android:src="@drawable/close"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="12dp"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
         <ProgressBar
@@ -29,8 +30,8 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="95dp"
             android:layout_height="12dp"
-            android:max="100"
             android:layout_marginLeft="5dp"
+            android:max="100"
             android:progress="10" />
 
         <ProgressBar
@@ -38,8 +39,8 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="95dp"
             android:layout_height="12dp"
-            android:max="100"
             android:layout_marginLeft="5dp"
+            android:max="100"
             android:progress="0" />
 
         <ProgressBar
@@ -47,8 +48,8 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="95dp"
             android:layout_height="12dp"
-            android:max="100"
             android:layout_marginLeft="5dp"
+            android:max="100"
             android:progress="0" />
 
         <ProgressBar
@@ -56,53 +57,18 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="95dp"
             android:layout_height="12dp"
-            android:max="100"
             android:layout_marginLeft="5dp"
+            android:max="100"
             android:progress="0" />
 
     </LinearLayout>
 
-    <FrameLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/add_your_em"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:text="@string/add_your_em"
-            android:textAppearance="@style/add_your_em"
-            android:lineSpacingExtra="-14sp"
-            android:gravity="top"
-            />
-
-        <EditText
-            android:id="@+id/email_id"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="110dp"
-            android:gravity="top"
-            android:hint="Email ID"
-            android:textAppearance="@style/email_id_" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/next1"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="309dp"
-            android:layout_marginTop="600dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center_horizontal|top"
-            android:lineSpacingExtra="3sp"
-            android:text="@string/next1"
-            android:background="@color/white"
-            android:textColor="#4F69AD"
-            android:textAppearance="@style/next1" />
-
-
-    </FrameLayout>
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
 </LinearLayout>

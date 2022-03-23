@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".signupfragment.Fragment1">
+
+
+        <TextView
+            android:id="@+id/add_your_em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-14sp"
+            android:text="@string/add_your_em"
+            android:textAppearance="@style/add_your_em" />
+
+        <EditText
+            android:id="@+id/email_id"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:gravity="top"
+            android:hint="Email ID"
+            android:textAppearance="@style/email_id_"
+            android:theme="@style/editTextOutline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="309dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/next1"
+            android:textAppearance="@style/next1"
+            android:textColor="#4F69AD" />
+
+    </FrameLayout>
+</layout>

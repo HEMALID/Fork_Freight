@@ -1,4 +1,4 @@
-package com.example.fork_freight_app
+package com.example.fork_freight_app.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,15 +14,7 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnCancle1.setOnClickListener {
-            var i = Intent(applicationContext,LandingActivity::class.java)
-            startActivity(i)
-        }
-        binding.next1.setOnClickListener {
-            var i = Intent(applicationContext,SignUpActivity2::class.java)
-            binding.pbar1.progress = 100
-            startActivity(i)
-        }
+
 
     }
 

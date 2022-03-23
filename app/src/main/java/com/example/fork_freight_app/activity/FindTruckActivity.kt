@@ -1,12 +1,13 @@
-package com.example.fork_freight_app
+package com.example.fork_freight_app.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.fork_freight_app.Fragment.*
+import com.example.fork_freight_app.R
+import com.example.fork_freight_app.fragment.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class Find_truck_Activity : AppCompatActivity() {
+class FindTruckActivity : AppCompatActivity() {
 
     private val brokers = Brokers_fg()
     private val findTruck = FindTruck_fg()
