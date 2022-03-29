@@ -14,8 +14,10 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.btnCancle.setOnClickListener {
+            var i= Intent(applicationContext,SignUpActivity::class.java)
+            startActivity(i)
+        }
 
     }
-
 }

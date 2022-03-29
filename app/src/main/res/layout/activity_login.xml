@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/login"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:gravity="center"
         android:lineSpacingExtra="0sp"
@@ -25,9 +25,11 @@
 
     <EditText
         android:id="@+id/edemail"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:hint="Email ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +37,10 @@
 
     <EditText
         android:id="@+id/edpassword"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +57,7 @@
         android:layout_marginTop="24dp"
         android:gravity="top"
         android:lineSpacingExtra="0sp"
-        android:text="@string/forgot_pass"
+        android:text="@string/forgotPass"
         android:textAppearance="@style/forgot_pass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -62,11 +66,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/rectangle_c"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/rectangle_c"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,14 +82,13 @@
 
     <View
         android:id="@+id/line_copy1"
-        android:layout_width="145dp"
+        android:layout_width="110dp"
         android:layout_height="1dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/line"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_c"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_c" />
 
     <TextView
@@ -103,14 +108,14 @@
 
     <View
         android:id="@+id/line_copy2"
-        android:layout_width="145dp"
+        android:layout_width="110dp"
         android:layout_height="1dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/line"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_c"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_c" />
 
     <TextView
@@ -122,48 +127,56 @@
         android:layout_marginTop="28dp"
         android:gravity="top"
         android:lineSpacingExtra="0sp"
-        android:text="@string/login_with_"
+        android:text="@string/loginWith"
         android:textAppearance="@style/login_with_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/or" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/facebook"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/button"
-        android:drawableLeft="@drawable/facebook"
-        android:gravity="center"
         android:text="Facebook"
+        android:textSize="12dp"
+        android:background="@drawable/button"
+        app:icon="@drawable/facebook"
+        app:iconGravity="textStart"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_with_" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/google"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="10dp"
+         android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/button1"
-        android:drawableLeft="@drawable/search"
+        app:icon="@drawable/search"
+        app:iconGravity="textStart"
         android:gravity="center"
+        android:textSize="12dp"
         android:text="Google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toTopOf="@+id/facebook" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/apple"
-        android:layout_width="320dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button2"
-        android:drawableLeft="@drawable/apple_logo"
+        app:icon="@drawable/apple_logo"
+        app:iconGravity="textStart"
         android:gravity="center"
+        android:textSize="12dp"
         android:text="Login with Apple"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,6 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +199,7 @@
             android:id="@+id/new_user_si"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/new_user_si"
+            android:text="@string/newUserSi"
             android:textAppearance="@style/new_user_si"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -206,5 +220,6 @@
             app:layout_constraintVertical_bias="0.615" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

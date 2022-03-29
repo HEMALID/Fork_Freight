@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
     </data>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".signupfragment.Fragment1">
@@ -17,37 +18,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:gravity="top"
             android:lineSpacingExtra="-14sp"
-            android:text="@string/add_your_em"
-            android:textAppearance="@style/add_your_em" />
+            android:text="@string/addYourEm"
+            android:textAppearance="@style/add_your_em"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_id"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
             android:gravity="top"
             android:hint="Email ID"
             android:textAppearance="@style/email_id_"
-            android:theme="@style/editTextOutline" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_your_em" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next1"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="309dp"
-            android:layout_marginTop="600dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@color/white"
-            android:gravity="center_horizontal|top"
-            android:lineSpacingExtra="3sp"
             android:text="@string/next1"
             android:textAppearance="@style/next1"
-            android:textColor="#4F69AD" />
+            android:textColor="#4F69AD"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

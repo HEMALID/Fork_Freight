@@ -15,6 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu"
+        android:backgroundTint="@color/white"
+        app:itemTextColor="@color/white"
         android:background="@color/black"
         app:itemIconTint="@color/white"/>
 

@@ -13,11 +13,13 @@
         tools:context=".signupfragment.Fragment4">
 
         <TextView
-            android:id="@+id/what_equipm"
+            android:id="@+id/whatEquipm"
             style="@style/what_equipm"
-            android:layout_width="331dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,27 +29,29 @@
             android:id="@+id/recyclersign4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/what_equipm"
+            app:layout_constraintTop_toBottomOf="@+id/whatEquipm"
             tools:listitem="@layout/equipment_item" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next4"
-            android:layout_width="80dp"
-            android:layout_height="36dp"
+            style="@style/lastSignUPBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/login"
             android:gravity="center"
-            android:text="Next"
-            android:textColor="#4F69AD"
+            android:text="Sign up"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclersign4" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
