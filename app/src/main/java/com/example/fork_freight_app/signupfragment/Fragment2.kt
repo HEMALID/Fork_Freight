@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.example.fork_freight_app.R
+import com.example.fork_freight_app.activity.SignUpActivity
 import com.example.fork_freight_app.databinding.Fragment2Binding
 
 class Fragment2 : Fragment() {
@@ -27,6 +28,7 @@ class Fragment2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_2, container, false)
+        (activity as SignUpActivity?)!!.progress2()
         binding.next2.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_fragment2_to_fragment3)
         }

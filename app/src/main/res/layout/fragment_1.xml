@@ -10,7 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".signupfragment.Fragment1">
+        tools:context=".signupfragment.Fragment1"
+        android:id="@+id/fragment1">
 
 
         <TextView
@@ -38,6 +39,8 @@
             android:layout_marginTop="10dp"
             android:gravity="top"
             android:hint="Email ID"
+            android:textColorHint="#7F8495"
+            android:inputType="textEmailAddress"
             android:textAppearance="@style/email_id_"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -47,7 +50,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"/>
+                android:background="@android:color/transparent"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
             android:text="@string/next1"
             android:textAppearance="@style/next1"
             android:textColor="#4F69AD"

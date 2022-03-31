@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
              var i = Intent(applicationContext, LandingActivity::class.java)
              startActivity(i)
+             overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
              finish()
         },3000)
 

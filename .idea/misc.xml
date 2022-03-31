@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../layout/custom_preview.xml" value="0.1828125" />
+        <entry key="app/src/main/res/drawable/bottom_item_color.xml" value="0.158" />
         <entry key="app/src/main/res/drawable/button.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/button1.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/button2.xml" value="0.164" />
@@ -13,11 +14,12 @@
         <entry key="app/src/main/res/drawable/long_truck.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/progressbar.xml" value="0.132" />
         <entry key="app/src/main/res/drawable/rectangle_c.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/signin.xml" value="0.1015" />
         <entry key="app/src/main/res/layout/activity_find_truck.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_sign_up2.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_sign_up3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up4.xml" value="0.18809373020899303" />
@@ -25,7 +27,7 @@
         <entry key="app/src/main/res/layout/equipment_item.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_1.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_2.xml" value="0.16" />
-        <entry key="app/src/main/res/layout/fragment_3.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_4.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_5.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_brokers_fg.xml" value="0.1546875" />
@@ -43,5 +45,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.15" />
+      </ProjectState>
+    </option>
   </component>
 </project>

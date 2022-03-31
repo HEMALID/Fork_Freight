@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fork_freight_app.R
 import com.example.fork_freight_app.activity.FindTruckActivity
+import com.example.fork_freight_app.activity.SignUpActivity
 import com.example.fork_freight_app.databinding.Fragment4Binding
 import com.example.fork_freight_app.equipment.EquipmentAdapter
 import com.example.fork_freight_app.equipment.EquipmentApi
@@ -45,6 +46,7 @@ class Fragment4 : Fragment() {
     ): View? {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_4, container, false)
+        (activity as SignUpActivity?)!!.progress4()
         binding.next4.setOnClickListener {
             var i = Intent(context,FindTruckActivity::class.java)
             startActivity(i)

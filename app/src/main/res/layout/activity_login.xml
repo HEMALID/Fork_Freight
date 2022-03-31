@@ -14,16 +14,17 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:lineSpacingExtra="0sp"
         android:text="@string/login"
+        android:textStyle="bold"
         android:textAppearance="@style/login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edemail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -31,11 +32,19 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Email ID"
+        android:textColorHint="#7F8495"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/login" >
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edpassword"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -43,10 +52,20 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:hint="Password"
+        android:textColorHint="#7F8495"
+        android:inputType="textPassword"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edemail" />
+        app:layout_constraintTop_toBottomOf="@+id/edemail" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/forgot_pass"
@@ -67,14 +86,15 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/rectangle_c"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/rectangle_c"
-        android:text="@string/login"
+        android:text="@string/loginBtn"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forgot_pass"
@@ -136,12 +156,13 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/facebook"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:text="Facebook"
-        android:textSize="12dp"
-        android:background="@drawable/button"
+        android:textSize="14dp"
+        app:backgroundTint="#1778F2"
+        app:cornerRadius="100dp"
         app:icon="@drawable/facebook"
         app:iconGravity="textStart"
         android:gravity="center"
@@ -151,16 +172,20 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/google"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="10dp"
          android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/button1"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="100dp"
+        app:strokeColor="#7F8495"
+        app:strokeWidth="1.5px"
         app:icon="@drawable/search"
         app:iconGravity="textStart"
         android:gravity="center"
-        android:textSize="12dp"
+        android:textSize="14dp"
         android:text="Google"
+        android:textColor="#666A77"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toTopOf="@+id/facebook" />
@@ -168,15 +193,16 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/apple"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button2"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="100dp"
         app:icon="@drawable/apple_logo"
         app:iconGravity="textStart"
         android:gravity="center"
-        android:textSize="12dp"
+        android:textSize="14dp"
         android:text="Login with Apple"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

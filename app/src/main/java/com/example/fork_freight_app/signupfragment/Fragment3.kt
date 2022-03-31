@@ -11,6 +11,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fork_freight_app.R
+import com.example.fork_freight_app.activity.SignUpActivity
 import com.example.fork_freight_app.databinding.Fragment3Binding
 import com.example.fork_freight_app.role.RoleAdapter
 import com.example.fork_freight_app.role.RoleApi
@@ -42,6 +43,9 @@ class Fragment3 : Fragment() {
     ): View? {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_3, container, false)
+
+        (activity as SignUpActivity?)!!.progress3()
+
         binding.next3.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_fragment3_to_fragment4)
         }

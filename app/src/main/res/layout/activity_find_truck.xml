@@ -16,9 +16,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu"
         android:backgroundTint="@color/white"
-        app:itemTextColor="@color/white"
+        app:itemTextColor="@color/bottom_item_color"
         android:background="@color/black"
-        app:itemIconTint="@color/white"/>
+        app:itemIconTint="@color/bottom_item_color"/>
 
     <FrameLayout
         android:id="@+id/fragment_container"

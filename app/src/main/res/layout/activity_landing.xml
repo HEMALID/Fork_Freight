@@ -79,6 +79,9 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/signin"
         android:text="@string/createAc"
+        app:strokeColor="#7F8495"
+        android:textColor="#4F69AD"
+        app:strokeWidth="1.5px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
