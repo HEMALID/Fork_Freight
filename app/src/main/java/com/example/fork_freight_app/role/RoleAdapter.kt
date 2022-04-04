@@ -1,7 +1,10 @@
 package com.example.fork_freight_app.role
 
 import android.view.LayoutInflater
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fork_freight_app.databinding.RoleItemBinding
 import com.example.fork_freight_app.role.modelrole.Role
@@ -11,7 +14,14 @@ class RoleAdapter(var role : List<Role>) :RecyclerView.Adapter<RoleAdapter.ViewH
     class ViewHolder(val binding: RoleItemBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(data: Role) {
             binding.role = data
-            binding.executePendingBindings()
+
+            binding.txthead.setOnClickListener {
+                if (binding.path.isVisible){
+                    binding.path.visibility = INVISIBLE
+                }else{
+                    binding.path.visibility = VISIBLE
+                }
+            }
         }
     }
 

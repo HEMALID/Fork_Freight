@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/button1.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/button2.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/facebook.xml" value="0.1025" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/line.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/login.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/long_truck.xml" value="0.138" />
@@ -16,6 +17,8 @@
         <entry key="app/src/main/res/drawable/rectangle_c.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/signin.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/style.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/switch_thumb_false.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/switch_thumb_true.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/thumb.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/track.xml" value="0.122" />
         <entry key="app/src/main/res/layout/activity_find_truck.xml" value="0.18" />
@@ -27,11 +30,11 @@
         <entry key="app/src/main/res/layout/activity_sign_up3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up4.xml" value="0.18809373020899303" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.15613382899628253" />
-        <entry key="app/src/main/res/layout/equipment_item.xml" value="0.19917864476386038" />
+        <entry key="app/src/main/res/layout/equipment_item.xml" value="0.17" />
         <entry key="app/src/main/res/layout/fragment_1.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_2.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_3.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_4.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_4.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_5.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_brokers_fg.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_find_truck_fg.xml" value="0.10054347826086957" />

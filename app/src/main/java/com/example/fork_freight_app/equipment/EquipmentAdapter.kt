@@ -1,20 +1,30 @@
 package com.example.fork_freight_app.equipment
 
+import android.content.Context.MODE_PRIVATE
+import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fork_freight_app.databinding.EquipmentItemBinding
 
-class EquipmentAdapter(var datax : List<String>):RecyclerView.Adapter<EquipmentAdapter.ViewHolder>() {
 
-    class ViewHolder(val binding: EquipmentItemBinding):RecyclerView.ViewHolder(binding.root) {
+class EquipmentAdapter(var datax: List<String>) :
+    RecyclerView.Adapter<EquipmentAdapter.ViewHolder>() {
+
+    class ViewHolder(val binding: EquipmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: String) {
             binding.data = data
-            binding.executePendingBindings()
+
+
+            binding.switch1.setOnClickListener {
+
+            }
+
+
         }
     }
 
-    override fun onCreateViewHolder(parent  : ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = EquipmentItemBinding.inflate(layoutInflater)
         return ViewHolder(binding)
