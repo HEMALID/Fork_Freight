@@ -138,4 +138,10 @@
         <item name="android:colorForeground">#42221f1f</item>
     </style>
 
+
+    <style name="Theme.XYZStyle" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
 </resources>

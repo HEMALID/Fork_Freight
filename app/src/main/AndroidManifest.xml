@@ -11,12 +11,15 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateVisible|adjustResize"
         android:theme="@style/Theme.Fork_Freight_App">
 
         <activity
             android:name=".activity.SignUpActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
+
             android:name=".activity.FindTruckActivity"
             android:exported="false" />
         <activity
@@ -33,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

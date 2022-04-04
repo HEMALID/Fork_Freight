@@ -24,7 +24,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnCancle.setOnClickListener {
-            var i= Intent(applicationContext,LoginActivity::class.java)
+            var i= Intent(applicationContext,LandingActivity::class.java)
             startActivity(i)
         }
 
