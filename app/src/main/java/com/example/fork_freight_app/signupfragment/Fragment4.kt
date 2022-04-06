@@ -76,7 +76,6 @@ class Fragment4 : Fragment() {
                     val responseBody = response.body()!!
                     val equipmentList = responseBody.data.equipment
                     myAdapter = EquipmentAdapter(equipmentList)
-                    myAdapter.notifyDataSetChanged()
                     binding.recyclersign4.adapter = myAdapter
 
                 }
