@@ -3,11 +3,11 @@ package com.example.fork_freight_app.signupfragment
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fork_freight_app.R
@@ -17,6 +17,7 @@ import com.example.fork_freight_app.databinding.Fragment4Binding
 import com.example.fork_freight_app.equipment.EquipmentAdapter
 import com.example.fork_freight_app.equipment.EquipmentApi
 import com.example.fork_freight_app.equipment.modelequipment.EquipmentResponse
+import com.example.fork_freight_app.equipment.modelequipment.Modelx
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,6 +32,8 @@ class Fragment4 : Fragment() {
     private lateinit var manager: RecyclerView.LayoutManager
     private lateinit var myAdapter: EquipmentAdapter
     private lateinit var linearLayoutManager: LinearLayoutManager
+
+    var items: List<Modelx> = ArrayList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
