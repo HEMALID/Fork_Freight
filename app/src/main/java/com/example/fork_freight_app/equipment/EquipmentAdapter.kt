@@ -1,7 +1,6 @@
 package com.example.fork_freight_app.equipment
 
 import android.annotation.SuppressLint
-import android.graphics.ColorSpace.Model
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
 import android.view.View

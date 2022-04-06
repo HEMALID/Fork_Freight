@@ -15,7 +15,7 @@ class RoleAdapter(var role : List<Role>) :RecyclerView.Adapter<RoleAdapter.ViewH
         fun bind(data: Role) {
             binding.role = data
 
-            binding.txthead.setOnClickListener {
+            binding.roleConst.setOnClickListener {
                 if (binding.path.isVisible){
                     binding.path.visibility = INVISIBLE
                 }else{
