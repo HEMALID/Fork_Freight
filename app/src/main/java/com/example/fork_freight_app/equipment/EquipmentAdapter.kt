@@ -17,7 +17,7 @@ class EquipmentAdapter(var datax: List<String>) : RecyclerView.Adapter<Equipment
     var itemStateArray = SparseBooleanArray()
     fun EquipmentAdapter() {}
 
-    class viewHolder(val binding: EquipmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class viewHolder(val binding: EquipmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
         var itemStateArray = SparseBooleanArray()
 
         fun bind(data: String) {
@@ -59,9 +59,8 @@ class EquipmentAdapter(var datax: List<String>) : RecyclerView.Adapter<Equipment
         setHasStableIds(true)
     }
 
-    internal class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),View.OnClickListener {
-        var itemStateArray = SparseBooleanArray()
-        private var items: List<Modelx> = ArrayList()
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),View.OnClickListener {
+
 
         private var mChecked: SwitchCompat = itemView.findViewById<View>(R.id.switch1) as SwitchCompat
 
